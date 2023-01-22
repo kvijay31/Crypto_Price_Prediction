@@ -36,21 +36,21 @@ The notebooks can be viewed from the repository. However, the data has been conf
 ## Model Overview: 
 
 ### Linear Regression & XGBOOST: 
-    #### Motivation: 
+   #### Motivation: 
     - Good starting point to get a baseline on model performance
     - Computationally inexpensive & fast to train
     - Explainability of results and allows for insights into the data
-    #### Results: 
+   #### Results: 
     - Predictions mainly around the mean, but does not model volatility well
     - Using default parameters already yields good results, hyperparameter tuning on XGBoost improves it even further
     
 ### MLP & LSTM:
-    #### Motivation: 
+   #### Motivation: 
     - Get a baseline for neural networks
     - RNN suffer from exploding or vanishing gradients and limited long term memory, LSTM relieves this issue
     - LSTM are neural networks specifically for Time Series Data use cases
     
-    #### Results: 
+   #### Results: 
     - XGBoost yields lower MSE on the test data, LSTM is even outperformed by linear regression
     - More complex model configurations (e.g., adding more than one hidden layer) lead to the models not learning properly, therefore hyperparameter            tuning effort was needed to make the model learn and not give a flatline prediction (i.e., to not predict the same value for all samples)
 
